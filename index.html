@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ae" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOC Cafe | الرياض</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        espresso: '#110F0E',
+                        warmBeige: '#F7F4F0',
+                        goldAccent: '#D4AF37'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    </style>
+</head>
+<body class="bg-[#F7F4F0] text-[#110F0E] antialiased">
+
+    <nav class="fixed top-0 w-full bg-[#110F0E] text-white py-4 px-6 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-widest text-[#D4AF37]">NOC CAFE</a>
+            <div class="hidden md:flex space-x-6 space-x-reverse text-sm uppercase tracking-wider">
+                <a href="#home" class="hover:text-[#D4AF37] transition">الرئيسية</a>
+                <a href="#about" class="hover:text-[#D4AF37] transition">فلسفتنا</a>
+                <a href="#menu" class="hover:text-[#D4AF37] transition">القائمة</a>
+                <a href="#reserve" class="hover:text-[#D4AF37] transition">الحجوزات</a>
+                <a href="#contact" class="hover:text-[#D4AF37] transition">اتصل بنا</a>
+            </div>
+            <a href="#menu" class="bg-[#D4AF37] text-[#110F0E] text-xs font-bold px-4 py-2 rounded shadow hover:bg-white transition">اطلب الآن</a>
+        </div>
+    </nav>
+
+    <section id="home" class="relative h-screen flex items-center justify-center bg-[#110F0E] text-white px-6 pt-16">
+        <div class="absolute inset-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=1920&q=80" class="w-full h-full object-cover" alt="NOC Cafe Riyadh">
+        </div>
+        <div class="relative z-10 max-w-3xl mx-auto text-center space-y-6">
+            <span class="text-xs uppercase tracking-[0.3em] text-[#D4AF37] font-semibold">محامص القهوة المختصة</span>
+            <h1 class="text-4xl md:text-6xl font-serif leading-tight">فخامة البساطة في قلب الرياض</h1>
+            <p class="text-sm md:text-base text-gray-300 font-light max-w-xl mx-auto">نستورد محاصيلنا الفاخرة من أعلى القمم الجبلية لنقدم تجربة استثنائية تليق بنخبة وتطلعات العاصمة.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+                <a href="#menu" class="bg-[#D4AF37] text-[#110F0E] font-bold text-xs uppercase tracking-widest px-8 py-4 rounded shadow hover:bg-white transition">استكشف القائمة</a>
+                <a href="#reserve" class="border border-white/30 text-white font-medium text-xs uppercase tracking-widest px-8 py-4 rounded hover:bg-white hover:text-[#110F0E] transition">احجز طاولتك</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="max-w-7xl mx-auto px-6 py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+            <span class="text-xs uppercase tracking-widest text-[#D4AF37] font-bold">قصتنا</span>
+            <h2 class="text-3xl font-bold">حيث تلتقي الهندسة المعمارية بفن التقطير</h2>
+            <p class="text-gray-600 leading-relaxed font-light">في NOC، لا نقدم مجرد كافيين؛ نحن نصنع تجربة بصرية وحسية متكاملة. يتميز فرعنا في حي العليا بتصميم مينيمالي معاصر يمنحك الهدوء والتركيز، سواء كنت تبحث عن مساحة عمل ملهمة أو لقاء راقٍ.</p>
+            <div class="border-r-4 border-[#D4AF37] pr-4 italic text-sm text-gray-500 bg-white p-4 rounded shadow-sm">
+                "نختار محاصيلنا بعناية فائقة وتخضع كل عملية تحميص لمعايير دقيقة لنضمن كوباً مثالياً خالٍ من العيوب."
+            </div>
+        </div>
+        <div class="h-96 rounded overflow-hidden shadow-xl border border-gray-200">
+            <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover" alt="Interior">
+        </div>
+    </section>
+
+    <section id="menu" class="bg-white py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-xl mx-auto mb-16 space-y-2">
+                <span class="text-xs uppercase tracking-widest text-[#D4AF37] font-bold">قائمتنا الحصرية</span>
+                <h2 class="text-3xl font-bold">المشروبات والمخبوزات الفاخرة</h2>
+                <div class="h-1 w-12 bg-[#D4AF37] mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-[#F7F4F0] rounded overflow-hidden shadow-sm hover:shadow-lg transition">
+                    <div class="h-56 bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-lg text-[#110F0E]">كورتادو النخبة</h3>
+                            <p class="text-xs text-gray-500 mt-1">توازن مثالي بين الإسبريسو المكثف والحليب المبخر بدقة.</p>
+                        </div>
+                        <span class="text-[#D4AF37] font-bold whitespace-nowrap">24 ر.س</span>
+                    </div>
+                </div>
+                <div class="bg-[#F7F4F0] rounded overflow-hidden shadow-sm hover:shadow-lg transition">
+                    <div class="h-56 bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-lg text-[#110F0E]">V60 كولومبيا</h3>
+                            <p class="text-xs text-gray-500 mt-1">تقطير بارد أو حار بإيحاءات فاكهية واضحة وقوام متناسق.</p>
+                        </div>
+                        <span class="text-[#D4AF37] font-bold whitespace-nowrap">32 ر.س</span>
+                    </div>
+                </div>
+                <div class="bg-[#F7F4F0] rounded overflow-hidden shadow-sm hover:shadow-lg transition">
+                    <div class="h-56 bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-lg text-[#110F0E]">تارت الزعفران والفستق</h3>
+                            <p class="text-xs text-gray-500 mt-1">مخبوزات طازجة يومياً بنكهات محلية فاخرة لمرافقة كوبك.</p>
+                        </div>
+                        <span class="text-[#D4AF37] font-bold whitespace-nowrap">42 ر.س</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reserve" class="max-w-4xl mx-auto px-6 py-24">
+        <div class="bg-[#110F0E] text-white p-8 rounded-lg shadow-2xl space-y-6">
+            <div class="text-center">
+                <h2 class="text-2xl font-serif text-[#D4AF37]">احجز مساحتك الخاصة</h2>
+                <p class="text-xs text-gray-400 mt-1">للاحتفالات، لقاءات العمل، أو جلسات التركيز في صالون العليا الميزانين.</p>
+            </div>
+            <form onsubmit="event.preventDefault(); alert('تم استلام طلب الحجز بنجاح ومقعدك بانتظارك!');" class="space-y-4 text-black">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input type="text" placeholder="الاسم الكريم" required class="w-full p-3 text-xs rounded bg-white focus:outline-none">
+                    <input type="tel" placeholder="رقم الجوال" required class="w-full p-3 text-xs rounded bg-white focus:outline-none">
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <input type="date" required class="w-full p-3 text-xs rounded bg-white focus:outline-none">
+                    <input type="time" required class="w-full p-3 text-xs rounded bg-white focus:outline-none">
+                </div>
+                <button type="submit" class="w-full bg-[#D4AF37] text-[#110F0E] text-xs uppercase tracking-widest font-bold py-4 rounded hover:bg-white transition">تأكيد حجز الطاولة</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="max-w-7xl mx-auto px-6 py-12 border-t border-gray-200">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-4">
+                <h2 class="text-2xl font-bold text-[#110F0E]">موقعنا في الرياض</h2>
+                <p class="text-sm text-gray-600"><i class="fa-solid fa-location-dot text-[#D4AF37] ml-2"></i> برج العليا التجاري، الدور الأرضي، الرياض، المملكة العربية السعودية</p>
+                <p class="text-sm text-gray-600"><i class="fa-solid fa-clock text-[#D4AF37] ml-2"></i> يومياً: من الساعة 6:00 صباحاً وحتى 1:00 بعد منتصف الليل</p>
+                <div class="pt-4">
+                    <a href="https://wa.me/966110000000" target="_blank" class="inline-flex items-center space-x-2 space-x-reverse bg-[#25D366] text-white px-6 py-3 rounded font-bold text-xs shadow hover:opacity-95 transition">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>تواصل مباشرة عبر واتساب خدمة العملاء</span>
+                    </a>
+                </div>
+            </div>
+            <div class="w-full h-48 bg-[#110F0E] rounded flex flex-col justify-center items-center text-center p-4 text-white">
+                <i class="fa-solid fa-map-location-dot text-3xl text-[#D4AF37] mb-2"></i>
+                <p class="text-xs font-semibold">احداثيات الموقع الجغرافي</p>
+                <p class="text-[10px] text-gray-400 mt-1">العليا - المنطقة المركزية الفاخرة</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#110F0E] text-gray-400 text-center py-8 text-xs border-t border-gray-800">
+        <p>© 2026 مقهى NOC Cafe. جميع الحقوق محفوظة. صُمم لرواد التميز بالرياض.</p>
+    </footer>
+
+</body>
+</html>
